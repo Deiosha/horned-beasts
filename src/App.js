@@ -26,7 +26,7 @@ class App extends React.Component {
     });
   }
   hideModal = () => {
-    this.setState({ selectedBeast: false });
+    this.setState({ selectedBeast: false, displayModal: false });
   }
 
 
@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
       <>
         {/* // <Container > */}
-        <Main allBeast={this.state.allBeast} displayModal={this.state.displayModal}/>
+        <Main openModal={this.openModal} allBeast={this.state.allBeast} displayModal={this.state.displayModal}/>
       <SelectedBeast
           hideModal={this.hideModal}
           showModal={this.state.displayModal}

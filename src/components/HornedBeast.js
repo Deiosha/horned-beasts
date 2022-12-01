@@ -29,10 +29,10 @@ class HornedBeast extends React.Component {
             <Card.Body>{this.props.description}</Card.Body>
           }
           <Card.Body>Number of Clicks: <img src="https://i.pinimg.com/236x/45/2b/6d/452b6da158fd90d7c2f086aa427b862e.jpg" onClick={this.handleClick} alt='' height="70px" width="70px" />{this.state.clickCount}</Card.Body>
-          <Card.Text>
+          {/* <Card.Text>
             {this.props.description}
 
-          </Card.Text>
+          </Card.Text> */}
         </Card>
 
       </>

@@ -38,7 +38,7 @@ class Main extends React.Component {
                     <option value="3">3</option>
                 </Form.Select>
                 <Row lg={10} xs={5} sm={3} md={4}>
-                    {this.props.allBeast.map(hornedInfo => (
+                    {this.state.filterData.map(hornedInfo => (
                         <Col key={hornedInfo._id}>
                             <HornedBeast openModal={this.props.openModal} key={hornedInfo._id} title={hornedInfo.title} imageUrl={hornedInfo.image_url} description={hornedInfo.description} />
                         </Col>))}
